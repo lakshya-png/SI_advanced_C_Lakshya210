@@ -26,22 +26,22 @@ int main(){
         if(choice<1||choice>4){
             printf("invaild choice");}
         if(choice==1){
-            printf("ID       =");
+            printf("# ID       =");
             for(int i=0;i<10;i++){
                 printf("%d ",ID[i]);
             }
             printf("\n");
-            printf("Quantity =");
+            printf("# Quantity =");
             for(int i=0;i<10;i++){
                 printf("%d ",Qua[i]);
             }
             printf("\n");
-            printf("Price    =");
+            printf("# Price    =");
             for(int i=0;i<10;i++){
                 printf("%d ",price[i]);
             }
             printf("\n");
-            printf("Offer    =");
+            printf("# Offer    =");
             for(int i=0;i<10;i++){
                 printf("%d ",offer[i]);
             }
@@ -52,7 +52,7 @@ int main(){
         int qu;
         if(choice==2){
             for(int i=0;i<10;i++){
-                printf("Enter the ID to ADD Item\n");
+                printf("Enter the ID of Product to ADD Item\n");
                 scanf("%d",&ID_N);
 
                 if (ID_N==11)
@@ -68,7 +68,7 @@ int main(){
 
                 for(int j=0;j<10;j++){
                     if(ID[j] == ID_N){
-                        if(qu>Qua[j]){
+                        if(qu>Qua[j]||qu<0){
                             printf("Invaild Quantity");
                             break;
                         }
@@ -85,7 +85,7 @@ int main(){
                 if(found == 0){
                     printf("Invalid ID\n");
                 } 
-                               
+
             }
             continue;
         }
@@ -99,8 +99,8 @@ int main(){
             printf("# Your Total Sum= %d \n",sum);
             printf("# Quantity =%d\n",qu);
             printf("# Your Total save =%d\n",save);
-            printf("--Thank you-- ");
-            break;            
+            printf("--Thank you-- \n\n");
+            continue;           
         }
 
         if(choice==4){
