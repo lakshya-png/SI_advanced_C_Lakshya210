@@ -1,4 +1,4 @@
-/*WAP to take input from user and check if input contain 
+/*WAP to take input from user and check if input contains 
 (ii) All odd digits*/
 
 #include<stdio.h>
