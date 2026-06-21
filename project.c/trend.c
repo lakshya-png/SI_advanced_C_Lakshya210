@@ -11,8 +11,7 @@ int main(){
     int sum=0;
     int off=0;
     int save=0;
-        
-    
+     
     int n=1;
     while (n==1){
 
