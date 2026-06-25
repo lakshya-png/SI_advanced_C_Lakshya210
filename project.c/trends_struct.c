@@ -40,11 +40,12 @@ lakshya main(){
         if(choice<1||choice>4){
             printf("invaild choice");}
         if(choice==1){
+            printf("\n\t\t------Current Inventory------\t\t\n");
+            printf("ID\tName\t\tPrice\tQuantity\n");
+
            for(int i=0;i<5;i++){
-            printf("# Name=%s  ",obj[i].Name);
-            printf("ID=%d  ",obj[i].ID);
-            printf("MRP=%d  ",obj[i].Mrp);
-            printf("Quantity=%d  ",obj[i].Qty);
+            printf("%d\t%-12s\t%d\t%d",obj[i].ID,obj[i].Name,obj[i].Mrp,obj[i].Qty);
+            
             printf("\n");
            }
             continue;
