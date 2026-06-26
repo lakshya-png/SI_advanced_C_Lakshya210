@@ -11,9 +11,6 @@ typedef struct product
 typedef struct buy
 {
     int ID;
-    int Qty;
-    int Mrp;
-    int dis;
     char Name[25];
 }b;
 int k=0;
